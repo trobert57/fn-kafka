@@ -1,0 +1,21 @@
+<settings>
+<proxies>
+    <proxy>
+        <id>httpproxy</id>
+        <active>true</active>
+        <protocol>http</protocol>
+        <host>emea-proxy.uk.oracle.com</host>
+        <port>80</port>
+        <nonProxyHosts>local.net|localhost|127.0.0.1</nonProxyHosts>
+    </proxy>
+<proxy>
+        <id>httpsproxy</id>
+        <active>true</active>
+        <protocol>https</protocol>
+        <host>emea-proxy.uk.oracle.com</host>
+        <port>80</port>
+        <nonProxyHosts>local.net|localhost|127.0.0.1</nonProxyHosts>
+    </proxy>
+
+</proxies>
+</settings>
