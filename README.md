@@ -5,7 +5,8 @@ The directory "kafka-libs" contains a Dockerfile to build a docker image with th
   
 1. To build, first clone this project to your environment.  
 2. Create the required docker image:  
-   cd kafka-libs   
+   cd kafka-libs  
+   If running behind a proxy, edit settings.xml with your proxy configuration  
    Edit build.sh and adjust values for http_proxy  
    Run ./build.sh to create the required docker image  
 3. Run create-app.sh.  
