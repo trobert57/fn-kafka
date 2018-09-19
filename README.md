@@ -12,10 +12,10 @@ The directory "kafka-libs" contains a Dockerfile to build a docker image with th
    Run `./build.sh` to create the required docker image  
 3. Create the fn application:  
    cd into the project directory (`cd ..` if you are in kafka-libs)  
-   Run `create-app.sh`.  
-   This will create a fn application either locally or on the fn cloud service. The config variables KAFKA_BROKERS and TOPIC_NAME can be adjusted later on (updateConfig.sh).  
+   Run `create-app.sh`  
+   This will create a fn application either locally or on the fn cloud service. The config variables KAFKA_BROKERS and TOPIC_NAME can be adjusted later on (updateConfig.sh)  
 4. Create the function within that application:  
-  cd into the "send" subdirectory and call `./deploy.sh`. 
-5. Now modify "updateConfig.sh" so that KAFKA_BROKERS points to the kafka brokers of your cluster and TOPIC_NAME is the name of the topic you want to send your data to. If you leave the kafka default of auto create topics, then the topic will be created automatically, if not already available.   
-6. Attach a kafka-console-consumer to your kafka cluster, listening on the topic name you are sending your data to.  
-7. The script testfn.sh shows how to send data to the function (either using fn init or curl). That data should then show up on the output of the kafka-console-consumer.  
+  cd into the "send" subdirectory and call `./deploy.sh`  
+5. Now modify "updateConfig.sh" so that KAFKA_BROKERS points to the kafka brokers of your cluster and TOPIC_NAME is the name of the topic you want to send your data to. If you leave the kafka default of auto create topics, then the topic will be created automatically, if not already available   
+6. Attach a kafka-console-consumer to your kafka cluster, listening on the topic name you are sending your data to  
+7. The script testfn.sh shows how to send data to the function (either using fn init or curl). That data should then show up on the output of the kafka-console-consumer  
