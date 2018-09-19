@@ -1,4 +1,4 @@
-package fntom.example;
+package fnkafka.example;
 
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
@@ -89,7 +89,7 @@ public class SendEmployeeFunction {
         status = "Created employee " + empInfo;
 
       } catch (Exception se) {
-            System.err.println("Unable to insert data into DB due to - " + se.getMessage());
+            System.err.println("Unable to send data to Kafka due to - " + se.getMessage());
       }
 
       return status;

@@ -1,4 +1,4 @@
-package fntom.example;
+package fnkafka.example;
 
 public class SendEmployeeInfo {
     

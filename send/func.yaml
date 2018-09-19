@@ -2,9 +2,9 @@ schema_version: 20180708
 name: fn-kafka-app-send-func
 version: 0.0.1
 runtime: java
-build_image: oracle-kafka-docker
+build_image: fn-kafka-docker
 run_image: fnproject/fn-java-fdk:jdk9-1.0.63
-cmd: fntom.example.SendEmployeeFunction::handle
+cmd: fnkafka.example.SendEmployeeFunction::handle
 format: http
 timeout: 200
 triggers:
